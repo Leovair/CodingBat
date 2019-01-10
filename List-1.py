@@ -125,3 +125,37 @@ def sum2(nums):
     elif len(nums) == 1:
         return nums[0]
     return none
+
+
+def middle_way(a, b):
+    '''
+    Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
+    :param a:
+    :param b:
+    :return:
+    '''
+    return [a[1], b[1]]
+print(middle_way([1, 2, 3], [4, 5, 6]))
+
+
+def make_ends(nums):
+    '''
+    Given an array of ints, return a new array length 2 containing the first and last elements from the original array. The original array will be length 1 or more.
+    :param nums:
+    :return:
+    '''
+    if len(nums) <= 1:
+        return [nums[0],nums[0]]
+    else:
+        return [nums[0],nums[-1]]
+
+def has23(nums):
+    '''
+    Given an int array length 2, return True if it contains a 2 or a 3.
+    :param nums:
+    :return:
+    '''
+    if 2 in nums or 3 in nums:
+        return True
+    else:
+        return False
